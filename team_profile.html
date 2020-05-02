@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+.main {
+  margin: 10px 100px;
+  padding: 14px 20px;
+}
+
+h2 {
+	font-size: 32px;
+	padding-left: 14px;
+}
+
+body{
+	margin: 0;
+	font-family: Agency FB, Arial, Helvetica, sans-serif;
+}
+
+.title {
+	width: 100%;
+	padding: 5px 15px;
+	font-size: 28px;
+	font-family: Candara Light, Tahoma, Geneva, sans-serif;
+	background-color: gray;
+}
+
+p {
+	font-size: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.information {
+  margin-top: 175px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 150px;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subbutton {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  width: 182px;
+}
+
+
+.navbar a:hover, .subnav:hover .subbutton {
+  background-color: green;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: green;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+<!-- Tab style personal information -->
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 30px 50px;
+}
+
+.tabinfo {
+	padding-top: 50px;
+}
+
+<!-- Tab style team profile -->
+.team-profile-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.team-profile-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 33.333333%;
+}
+
+.team-profile-tab button:hover {
+  background-color: #ddd;
+}
+
+.team-profile-tab button.active {
+  background-color: #ccc;
+}
+
+.teamcontent {
+  display: none;
+  background-color: #f2f2f2;
+  height: 450px;
+}
+
+.personalitytable {
+	width: 100%;
+}
+
+.liam-personality {
+	background-color:#66e0ff;
+}
+
+.prottay-personality {
+	background-color: #ff9933;
+}
+
+.minh-personality {
+	background-color:#80ff80
+}
+
+.nick-personality {
+	background-color:#ffff66;
+}
+
+.tran-personality {
+	background-color:#ff4d4d;
+}
+
+</style>
+</head>
+<body>
+<body>
+<div class = "container">
+	<div class = "title">
+	<h1>Yet to be named brigade</h1>
+	</div>
+<!--TODO: Put links in navbar -->
+	<div class="navbar">
+		<a href="#contact">Home</a>
+	  <div class="subnav">
+		<button class="subbutton">Team Profile <i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#LINKHERE">Personal Profiles</a>
+		  <a href="#LINKHERE">Team Profile</a>
+		  <a href="#LINKHERE">Ideal Jobs</a>
+		</div>
+	  </div> 
+	  <a href="#LINKHERE">Industry Data</a>
+	  <a href="#LINKHERE">IT Work</a>
+	  <div class="subnav">
+		<button class="subbutton">IT Technologies <i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#LINKHERE">Cyber Security</a>
+		  <a href="#LINKHERE">Data Science/Analytics</a>
+		  <a href="#LINKHERE">Augmented Reality</a>
+		  <a href="#LINKHERE">Cloud Computing</a>
+		</div>
+	  </div> 
+	  <a href="#contact">Project Idea</a>
+	  <div class="subnav">
+		<button class="subbutton">Group Feedback<i class="fa fa-caret-down"></i></button>
+		<div class="subnav-content">
+		  <a href="#LINKHERE">Link 1</a>
+		  <a href="#LINKHERE">Link 2</a>
+		  <a href="#LINKHERE">Link 3</a>
+		  <a href="#LINKHERE">Link 4</a>
+		  <a href="#LINKHERE">Link 5</a>
+		</div>
+	  </div>
+	  <a href="#LINKHERE">Group Reflection</a>
+	</div>
+</div>
+
+<div class = "main">
+	<div>
+	<h1>Team Name</h1>
+	<p>Our teams name is "Yet to be Named Brigade". It was chosen originally as a placeholder but has since stuck.</p>
+	</div>
+	<div>
+	<h1>Personal Information</h1>
+	</div>
+	<div class="tab">
+	  <button class="tablinks" onclick="openName(event, 'Liam')">Liam</button>
+	  <button class="tablinks" onclick="openName(event, 'Prottay')">Prottay</button>
+	  <button class="tablinks" onclick="openName(event, 'Minh')">Minh</button>
+	  <button class="tablinks" onclick="openName(event, 'Nick')">Nick</button>
+	  <button class="tablinks" onclick="openName(event, 'Tran')">Tran</button>
+	</div>
+
+	<div style = "background-color:#66e0ff; padding-bottom: 120px;" id="Liam" class="tabcontent">
+		<div class = "tabinfo">
+		  <img src = "https://puu.sh/FqoK2/0a13fe9471.jpg" height = 360 width = 270 style= "float: right; margin-left: 20px; display: inline-block;">
+		  <h3>Liam Conrad</h3>
+		  <ul>
+		  <li>Date of Birth: 05/07/1998</li>
+		  <li>Student Number: 3829929</li>
+		  <li>Email Address: s3829929@student.RMIT.edu.au</li>
+		  </ul>
+		  <p>Am an avid video game player, also a fan of esports with Counter-Strike and League of Legends being the two scenes i follow. I am also a huge fan of music with some of my favourite genres being:
+		  Future Bass, J-Core, Happy Hardcore and Speedcore.</p>
+		  <p>I took an interest in computers at an early age as I was always on them playing video games. As I've grown up i have foun great enjoyment and satisfaction in playing games that require you to
+		  solve logic puzzles, this lead me to realise that i have an interest in programming and creating solutions for people using logic based tools.
+		</div>
+	</div>
+
+	<div style = "background-color: #ff9933; padding-bottom: 130px;" id="Prottay" class="tabcontent">
+		<div class = "tabinfo">
+		  <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/187562442@N03/49842856502/in/dateposted-public/" title="95063987_2729073437314095_8937410833659461632_n"><img style = "float:right; margin-left: 20px;" src="https://live.staticflickr.com/65535/49842856502_d5843863eb.jpg" width="480" height="360" alt="95063987_2729073437314095_8937410833659461632_n"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> </p>
+		  <h3>Prottay Karim</h3>
+		  <ul>
+		  <li>Student Number: 3822620</li>
+		  <li>Email Address: s3822620@student.rmit.edu.au</li>
+		  </ul>
+		  <p>I am currently studying Bachelor's of Information Technology at RMIT University. My student number is s3822620. I completed my highschool in 2019 from Wordbridge School in Bangladesh, the 
+		  country where I was born and raised. I grew up in a multi cultural house where I learned to speak not only English and Bengali, but also Hindi and Urdu. I am a self taught Cinematographer, also 
+		  I have been painting for over 10years now.</p>
+		  <p>I fell in love with the internet on the very first day I got access to the Internet. I was fascinated by the colors and designs of a "webpage" that I discovered and how it interacted with every 
+		  click. Whatever I wanted was just a click away from me. It was as if the 7 year old me had seen magic that day! From that day onwards my interests in IT grew stronger. I expect to learn quite a 
+		  few things from my time at RMIT. I want to learn Programming, IoT and cybersecurity.</p>
+		</div>
+	</div>
+
+	<div style = "background-color:#80ff80; padding-bottom: 210px;" id="Minh" class="tabcontent">
+		<div class = "tabinfo">
+			<img src="http://puu.sh/FFgZy/97a7777d7f.jpg" alt="Professional Profile Picture" height = "360" style = "float:right; margin-left: 20px;" >
+			<h3>Quang Minh Duong</h3>
+			<ul>
+				<li>Student ID: 3759757</li>
+				<li>Email address: s3759757@student.rmit.edu.au</li>
+			</ul>
+				<p>I come from Danang, Vietnam, I’m 20 years old. I completed my A-level degree in Vietnam two years ago and I just came to Melbourne to study abroad last year. 
+				I can speak two languages, which is Vietnamese and English, I’m also study the third language, which is Mandarin at this moment. Other than IT, I also have a hobby about soccer, play computer 
+				games and research about history.</p>
+		</div>
+	</div>
+
+	<div style = "background-color:#ffff66;" id="Nick" class="tabcontent">
+		<div class = "tabinfo">
+		<img src="https://puu.sh/FBHY5/a0d7e1c92b.jpg" alt="A picture of me" width="360" height="360" style = "float:right; margin-left: 20px;">
+		  <h3>Nicholas Massouridis</h3>
+		  <ul>
+			<li>Nicholas Massouridis</li>
+			<li>s3344701</li>
+			<li>Email: s3344701@student.rmit.edu.au</li>
+			<li>Greek/Australian</li>
+			<li>Completed year 12 in 2010</li>
+			<li>Can speak English, Greek and Mandarin Chinese</li>
+		   </ul>
+			<p>I enjoy playing video games, watching AFL and professional wrestling, watching/reading anime/manga. I have 1 dog named Harley; he is a Maltese shih-tzu cross.</p>
+
+			<p>Ever since I was a little kid, I have been interested in video games and computers. I enjoy seeing how things work and how they interact with each other. I currently have a little experience 
+			coding or anything software based, but I have built my own computer multiple times.</p>
+
+			<p>I’m not too sure what my ideal job is currently, I was hoping to get a better understanding or find what I enjoy doing by doing this course. I have found an interest in Artificial Intelligence 
+			and wish to explore where that will take me.</p>
+		</div>
+	</div>
+
+	<div style = "background-color:#ff4d4d; padding-bottom: 150px;" id="Tran" class="tabcontent">
+		<div class = "tabinfo">
+		  <img src = "https://puu.sh/FFgC1/eb129f3bec.jpg" height = 360 width = 160 style= "float: right; margin-left: 20px;">
+		  <h3>Tran Gia Luat Ung</h3>
+		  <ul>
+		  <li>Gender: Male</li>
+		  <li>Date of Birth: 17/03/1997</li>
+		  <li>Student Number: 3779300</li>
+		  <li>From: CanTho city, Vietnam</li>
+		  <li>Nationality: VIETNAMESE</li>
+		  <li>Spoken Languages: VIETNAMESE and ENGLISH</li>
+		  </ul>
+		  <p>I am an honest man, love sport, basketball passion, like hangout with friends, and addict in travelling.</p>
+		</div>
+	</div>
+	
+	<div>
+		<h1>Team Profile</h1>	
+	</div>
+	
+	<div class="team-profile-tab">
+	  <button class="teamlinks" onclick="openTest(event, 'MBTI')">MBTI Test</button>
+	  <button class="teamlinks" onclick="openTest(event, 'Learning-Style')">Learning Style Test</button>
+	  <button class="teamlinks" onclick="openTest(event, 'Other')">Other</button>
+	</div>
+	
+	<div id="MBTI" class="teamcontent">
+		<table class = "personalitytable">
+			<tr style = "font-size: 48px;">
+				<th class = "liam-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Liam</th>
+				<th class = "prottay-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Prottay</th>
+				<th class = "minh-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Minh</th>
+				<th class = "nick-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Nick</th>
+				<th class = "tran-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Tran</th>
+			</tr>
+			<tr style = "font-size: 36px; font-style: italic;">
+				<th class = "liam-personality">INTP</th>
+				<th class = "prottay-personality">INFJ-A</th>
+				<th class = "minh-personality">ENTP-T</th>
+				<th class = "nick-personality">ISFP</th>
+				<th class = "tran-personality">ESTP-T</th>
+			</tr>
+			<tr style = "font-size: 36px;">
+				<th class = "liam-personality">(Logician)</th>
+				<th class = "prottay-personality">(Advocate)</th>
+				<th class = "minh-personality">(Debater)</th>
+				<th class = "nick-personality">(Adventurer)</th>
+				<th class = "tran-personality">(Entrepreneur)</th>
+			</tr>
+<!-- TODO: add links to full result -->
+			<tr style = "font-size: 24px;">
+				<th class = "liam-personality">Full Result</th>
+				<th class = "prottay-personality">Full Result</th>
+				<th class = "minh-personality">Full Result</th>
+				<th class = "nick-personality">Full Result</th>
+				<th class = "tran-personality">Full Result</th>
+			</tr>
+		</table>
+		<h3 style = "font-style: italic">What it means...</h3>
+		<p>Our group shows a good mix of personality types, we have an almost even spread of introverts and extroverts and sensing and intuition. We have a majority of people with the perceiving trait
+		over the judging trait. With this informatoin we can see that each of us have something to bring to the group however we need to be mindful of planning and sticking to deadlines to make up for the
+		lack of people with the judgement trait in our group.</P>
+		<p>Although uncommon for the personality type, Liam was chosen as the group leader. This shows that there is not a direct correlation between personallity type and how a person with the 
+		personality type will act.</p>
+	</div>
+	
+	<div id="Learning-Style" class="teamcontent">
+		<table class = "personalitytable">
+			<tr style = "font-size: 48px;">
+				<th class = "liam-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Liam</th>
+				<th class = "prottay-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Prottay</th>
+				<th class = "minh-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Minh</th>
+				<th class = "nick-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Nick</th>
+				<th class = "tran-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Tran</th>
+			</tr>
+			<tr style = "font-size: 36px; font-style: italic;">
+				<th class = "liam-personality">Tactile</th>
+				<th class = "prottay-personality">Visual</th>
+				<th class = "minh-personality">Tactile</th>
+				<th class = "nick-personality">Visual</th>
+				<th class = "tran-personality">Visual</th>
+			</tr>
+<!-- TODO: add links to full result -->
+			<tr style = "font-size: 24px;">
+				<th class = "liam-personality">Full Result</th>
+				<th class = "prottay-personality">Full Result</th>
+				<th class = "minh-personality">Full Result</th>
+				<th class = "nick-personality">Full Result</th>
+				<th class = "tran-personality">Full Result</th>
+			</tr>
+		</table>
+		<h3 style = "font-style: italic">What it means...</h3>
+		<p>Our group is comprised of Visual and Tactile learners. With the ability to share screens over the internet visual learners could pick up on things by having it shown to them. For tactile
+		learners the inability to actually meet up meant that unfortunately they may have struggled to pick up on certain concepts. Going forward we need to be sensitive of this and allow extra time
+		for them to learn concepts shoulld they require it.</p>
+		
+	</div>
+	
+	<div id="Other" class="teamcontent">
+		<table class = "personalitytable">
+			<tr style = "font-size: 48px;">
+				<th class = "liam-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Liam</th>
+				<th class = "prottay-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Prottay</th>
+				<th class = "minh-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Minh</th>
+				<th class = "nick-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Nick</th>
+				<th class = "tran-personality" style = "border-bottom: 1px solid #ccc;" width = "20%">Tran</th>
+			</tr>
+			<tr style = "font-size: 24px;">
+				<th style = "height: 50px;" class = "liam-personality">(DISC Personailty Report)</th>
+				<th style = "height: 50px;" class = "prottay-personality">(Creativity Test)</th>
+				<th style = "height: 50px;" class = "minh-personality">(Big 5)</th>
+				<th style = "height: 50px;" class = "nick-personality">(Big 5)</th>
+				<th style = "height: 50px;" class = "tran-personality">(Big 5)</th>
+			</tr>
+			<tr style = "font-size: 36px; font-style: italic;">
+				<th class = "liam-personality">Compliance</th>
+				<th class = "prottay-personality">66.64%</th>
+				<th class = "minh-personality">Agreeableness</th>
+				<th class = "nick-personality">Agreeableness</th>
+				<th class = "tran-personality">Neuroticism</th>
+			</tr>
+			<tr style = "font-size: 24px;">
+				<th class = "liam-personality"></th>
+				<th class = "prottay-personality"></th>
+<!-- TODO: add links to full result -->
+				<th class = "minh-personality"><a>Full Result</a></th>
+				<th class = "nick-personality"><a>Full Result</a></th>
+				<th class = "tran-personality"><a>Full Result</a></th>
+			</tr>
+		</table>
+		<h3 style = "font-style: italic">What it means...</h3>
+		<p>With two people having their highers percentage in The Big 5 being Agreeableness and Liam's most prominent factor in the DISC Personality Report being compliance, we can identify that our group
+		is very open minded to the suggestionss of others. Prottay scoring above the average person in the creativity test shows that he is creative and can be instrumental in designing our solutions
+		or coming up with solutions that others haven't though of</p>
+	</div>
+		<div>
+			<h1>Ideal Jobs</h1>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc;">Liam</h2>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc; text-align: right; padding-right: 10px;">Prottay</h2>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc;">Minh</h2>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc; text-align: right; padding-right: 10px;">Nick</h2>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc;">Tran</h2>
+			</div>
+			<div style = "padding: 20px;">
+				<h2 style = "border-bottom: 1px solid #ccc; text-align: right; padding-right: 10px;">Compare/Contrast</h2>
+			</div>
+	</div>
+</div>
+
+
+<!-- Script for personal information tab -->
+<script>
+function openName(evt, memberName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(memberName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-- Script for team profile tab -->
+<script>
+function openTest(evt, testName) {
+  var i, teamcontent, teamlinks;
+  teamcontent = document.getElementsByClassName("teamcontent");
+  for (i = 0; i < teamcontent.length; i++) {
+    teamcontent[i].style.display = "none";
+  }
+  teamlinks = document.getElementsByClassName("teamlinks");
+  for (i = 0; i < teamlinks.length; i++) {
+    teamlinks[i].className = teamlinks[i].className.replace(" active", "");
+  }
+  document.getElementById(testName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
